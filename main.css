@@ -1,0 +1,52 @@
+body{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1rem;
+    margin: 0;
+}
+nav#navbar{
+    background-color: #AD6EDD;
+}
+    #navbar ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    li.nav-link{
+        float: left;
+        
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .nav-link a{
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        
+        font-weight: 600;
+    }
+.welcome-section{
+    overflow: auto;
+}
+    
+    #description{
+        display: inline-block;
+        float: left;
+        width: 50%;
+        overflow: auto;
+    }
+    #big-photo{
+        display: inline-block;
+        width: 50%; 
+        float: right;
+        background-color: #eee;
+        overflow: hidden; 
+    }
+    #big-photo img{
+        display: block;
+        object-fit: fill;
+        max-width: 50%;
+    }
+    
