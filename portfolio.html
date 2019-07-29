@@ -9,7 +9,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!--Google Font Noto Sans-->
-	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap" rel="stylesheet">
+	<!--Font Awesome v.4-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--ATtach main.css-->
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
@@ -21,15 +24,17 @@
 		</ul>
 	</nav>
 	<section id="welcome-section">
+		<div id="photo-wrapper">
+			<div id="big-photo">
+				<img src="assets/aang.jpg">
+			</div>
+		</div>
 		<div id="description">
 			<h1>Reza Siahaan</h1>
 			<p>
 				Lorem ipsum as aklsdj alsd aklsdj aklsjd alsjd kl
 				kaljsdlad asd kjalsdjl ad.
 			</p>
-		</div>
-		<div id="big-photo">
-			<img src="assets/big-photo.jpg">
 		</div>
 	</section>
 	<section id="projects">
@@ -54,20 +59,50 @@
 				</p>
 			</a>	
 		</div>
-		<button class="theBtn">See more</button>
+		<button class="theBtn">
+			See more
+			<i class="fa fa-arrow-right" aria-hidden="true"></i>
+		</button>
 	</section>
 
-	<section id="welcome-section" id="profile-link">
+	<section id="contact" id="profile-link">
 		<h1>Contact me</h1>
-		<a class="" href="">
-			<i></i>
-		</a>
-		<a class="" href="">
-			<i></i>
-		</a>
-		<a class="" href="">
-			<i></i>
-		</a>
+		<div class="contact-wrapper">
+			<div class="contact-tile"">
+				<a href="https://github.com/mrezaprwr/" target="_blank">
+					<i class="fa fa-github" aria-hidden="true"></i>
+					<p>Github</p>
+				</a>
+			</div>
+			<div class="contact-tile">
+				<a href="https://www.linkedin.com/in/rezasiahaan/" target="_blank">
+					<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+					<p>LinkedIn</p>
+				</a>
+			</div>
+			<div class="contact-tile">
+				<a href="https://twitter.com/findmyzipper/" target="_blank">
+					<i class="fa fa-twitter-square" aria-hidden="true"></i>
+					<p>Twitter</p>
+				</a>
+			</div>
+			<!--
+			<a class="contact-tile" href="">
+				<i class="fa fa-github" aria-hidden="true"></i>
+				<p>Github</p>
+			</a>
+			
+			<a class="contact-tile" href="">
+				<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+				<p>LinkedIn</p>
+			</a>
+			<a class="contact-tile" href="">
+				<i class="fa fa-twitter-square" aria-hidden="true"></i>
+				<p>Twitter</p>
+			</a>
+			-->
+		</div>
+
 	</section>
 
 	<footer>
