@@ -1,6 +1,6 @@
 body{
     font-family: 'Noto Sans', sans-serif;
-    font-size: 1rem;
+    font-size: 0.96rem;
     margin: 0;
 }
 nav#navbar{
@@ -36,45 +36,34 @@ section{
     padding-top: 3rem;
 }
 #welcome-section{
+    /*
     overflow: auto;
-    
     padding-top: 7rem;
-    padding-bottom: 5rem;
-    display: grid;
-    grid-template-columns: 20% 40%;
-    justify-content: center;
+    padding-bottom: 5rem; */
+    padding-top: 0px;
+    margin-top: 0px;
+    display: block;
+    height: 100vh;
+
+
 }
     #welcome-section h1{
         margin-top: 2rem;
         color: #AD6EDD;
     }
+    .rowTab{
+        overflow: auto;
+        display: flex;
+        padding-top: 7rem;
+    }
     #photo-wrapper{
         overflow: auto;
-        margin-left: 2rem;
+        width: 25%;
+        margin-left: 5rem;
     }
-    
-    #description{
-        margin-left: 1rem;
-
-        display: flex;
-        overflow: auto;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: left;
-    }
-        #description h1{
-            margin: 0;
-            margin-right: 18rem;
-        }
-        #description p{
-            margin-top: 0.5rem;
-        }
-
     #big-photo{
         display: inline-block;
-        width: 50%; 
-        float: left;
+        float: right;
         background-color: #eee;
         overflow: hidden; 
     }
@@ -85,13 +74,30 @@ section{
         -moz-border-radius:50px;
         border-radius:50%;
         overflow: hidden;
-        height: 200px;
-        width: 200px;
+        height: 12rem;
+        width: 12rem    ;
     }
     #big-photo img{
+        width: 100%; 
         position: relative;
-        right: 12px;
     }
+    
+    #description{
+        width: 60%;
+        padding-top: 2.5rem;
+        margin-left: 3rem;
+        font-size: 1.1rem;
+        overflow: auto;
+        text-align: left;
+    }
+        #description h1{
+            margin: 0;
+        }
+        #description p{
+            margin-top: 0.5rem;
+            width: 85%;
+        }
+
 
 #projects{
     padding-bottom: 3rem;
@@ -207,5 +213,36 @@ small{
     font-weight: 600;
     float: right;
     margin-right: 2rem;
+}
+
+@media screen and (max-width: 479px){
+    .rowTab{
+        flex-direction: column;
+    }
+    #photo-wrapper{
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+        width: 100%;
+    }
+    #big-photo{
+        height: 10rem;
+        width: 10rem;
+    }
+    #description{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        margin-top: 0.8rem;
+        font-size: 0.87rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #description p{
+        overflow: auto;
+        width: 100%;
+    }
 }
 
